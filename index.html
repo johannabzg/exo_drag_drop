@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=620">
+  <title>fucktrump.com</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <h1> Etouffe Trump avec les tacos ! </h1>
+  <section class="wrapper">
+
+        <img class="tacos" src="tacos.png">
+        <img class="tacos" src="tacos.png">
+        <img class="tacos" src="tacos.png">
+        <img class="tacos" src="tacos.png">
+        <img class="tacos" src="tacos.png">
+        <img class="tacos" src="tacos.png">
+        <img class="tacos" src="tacos.png">
+        <img class="tacos" src="tacos.png">
+
+        <div id="droppable" class="truc">
+        </div>
+
+  </section>
+
+  <script>
+
+  $(function() {
+    var nbdetacos = 0;
+    $( ".tacos" ).draggable();
+    $( ".truc" ).droppable({
+
+      drop: function( event, ui ) {
+        nbdetacos++;
+        if(nbdetacos == 8){
+
+             $(".truc").append('<img src="trumpdead.png"/>');
+             $(".tacos").hide();
+       }
+      }
+    });
+  } );
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+.tacos{
+  width: 150px;
+}
+.tacos1 {
+  display:flex;
+}
+
+.wrapper {
+  background-color: rgba(250, 250, 210, 0.8);
+}
+
+.truc{
+  background-image: url("trump.png");
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+}
